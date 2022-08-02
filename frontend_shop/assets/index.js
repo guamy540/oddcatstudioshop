@@ -1,0 +1,5 @@
+export {default as background} from './images/background.webp'
+export {default as booya} from './images/booya.webp'
+export {default as instagramLogo} from './images/instagram/webp'
+export {default as tiktokLogo} from './images/tiktok-512.webp'
+export {default as patreonLogo} from './images/whitepatreon.webp'
