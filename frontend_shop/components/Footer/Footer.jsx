@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-container">
       <p>2022 Odd Cat Studio All rights reserverd</p>
       <p className="icons">
-        <a href="https://instagram.com/theosunbee?r=nametag" target="_blank">
+        {/*<a href="https://instagram.com/theosunbee?r=nametag" target="_blank">
           <FaInstagram />
         </a>
         <a href="https://vm.tiktok.com/ZTdD2Bs6K/" target="_blank">
@@ -15,7 +15,7 @@ const Footer = () => {
         </a>
         <a href="https://www.patreon.com/oddcatstudio?fan_landing=true" target="_blank">
           <FaPatreon/>
-        </a>
+  </a>*/}
       </p>
     </div>
   )
