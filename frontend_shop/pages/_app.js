@@ -4,12 +4,14 @@ import Navbar from '../components/Navbar/Navbar'
 import { Layout } from '../components'
 import { StateContext } from '../context/StateContext'
 import { Toaster } from 'react-hot-toast';
+import { favicon } from '../assets'
 
 function MyApp({ Component, pageProps }) {
   return (
+    
     <StateContext>
-      <Layout>
-        <Toaster/>
+      <Layout>        
+        <Toaster/>        
         <Component {...pageProps} />
       </Layout>
     </StateContext>

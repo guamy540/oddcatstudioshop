@@ -1,6 +1,6 @@
 import React from 'react'
 import product from '../../backend_sanity/schemas/product'
-import {Navbar, Product} from '../components'
+import {Navbar, Product, Header} from '../components'
 import {client} from '../lib/client'
 import { useState } from 'react'
 
@@ -11,6 +11,7 @@ const Home = ({products}) => {
 
   return (
     <div> 
+      <Header/>
         <div className="products-heading">
           <h2>Prints</h2>
           <p>Buy the stuff!</p>

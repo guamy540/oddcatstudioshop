@@ -3,14 +3,16 @@ import Head from 'next/head'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
+import { favicon } from '../../assets'
 
 const Layout = ({children}) => {
   return (
     <div className='layout'>
-        <Head><title>Odd Cat Studio Store</title></Head>
+        <Head><title>Odd Cat Studio Store</title>
+        <link rel="shortcut icon" href={favicon}/>
+        </Head>
     
         <header>
-            <Header/>
             <Navbar/>
         </header>
     
