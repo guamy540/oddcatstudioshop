@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
-import { favicon } from '../../public/logo.ico'
 
 const Layout = ({children}) => {
   return (
