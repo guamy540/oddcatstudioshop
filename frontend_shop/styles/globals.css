@@ -31,16 +31,20 @@ width: 100%;
 }
 
 .header-container{
-  margin-top: 2rem;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.header-image-container{
-  height: 90vh;
+@media screen and (max-width:800px){
+  .shop-now-message-container{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px black;
+  }
 }
 
 
@@ -600,7 +604,6 @@ padding: 6px;
   color: #f02d34;
 }
 .success-wrapper, .cancel-wrapper{
-  background-color: white;
   min-height: 60vh;
 
 }
@@ -608,7 +611,6 @@ padding: 6px;
   width: 1000px;
 margin: auto;
 margin-top: 160px;
-  background-color: #dcdcdc;
   padding: 50px;
   border-radius: 15px;
   display: flex;
@@ -626,7 +628,7 @@ margin-top: 160px;
   margin-top: 15px 0px;
   font-weight: 900;
   font-size: 40px;
-  color:#324d67;
+  color:#df9e5e;
 }
 .success .email-msg{
    font-size: 16px;
@@ -646,7 +648,7 @@ margin-top: 160px;
 }
 .success .description .email{
   margin-left: 5px;
-  color: #f02d34;
+  color: black;
 }
 .product-max-qty{
   margin-top: 10px;
@@ -798,6 +800,7 @@ margin-top: 160px;
 .success h2{
   font-size: 17px;
 }
+
 .btn-container{
   width: 300px;
   margin: auto;

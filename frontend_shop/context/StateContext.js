@@ -1,14 +1,53 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-hot-toast';
 
+//initialize items from local storage, have to wait for window to load because this is nextjs/SSR
+function getInitialItems(){
+  if (typeof window !== 'undefined'){
+  const localData = localStorage.getItem('cartItems');
+  return localData ? JSON.parse(localData) : []
+}}
+
+function getInitialTotalPrice(){
+  if (typeof window !== 'undefined'){
+  const localData = localStorage.getItem('totalPrice');
+  return localData ? JSON.parse(localData) : 0
+}}
+
+//seems to be causing a hydration error, must fix in the future
+/*function getInitialTotalQuantities(){
+  if (typeof window !== 'undefined'){
+  const localData = localStorage.getItem('totalQuantities');
+  return localData ? JSON.parse(localData) : 0
+}}*/
+
 const Context = createContext();
 
 export const StateContext = ({ children }) => {
   const [showCart, setShowCart] = useState(false);
-  const [cartItems, setCartItems] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
+ 
+  //handles the items in the cart
+  const [cartItems, setCartItems] = useState(getInitialItems);
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems))
+  }, [cartItems])
+ 
+  //handles total price of items in the cart
+  const [totalPrice, setTotalPrice] = useState(getInitialTotalPrice);
+  useEffect(() => {
+    localStorage.setItem('totalPrice', JSON.stringify(totalPrice))
+  }, [totalPrice])
+  
+  //handles total quantities of items in the cart to display
   const [totalQuantities, setTotalQuantities] = useState(0);
+  useEffect(() => {
+    localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities))
+  }, [totalQuantities])
+  
   const [qty, setQty] = useState(1);
+
+  
+
 
   let foundProduct;
   let index;
@@ -19,7 +58,7 @@ export const StateContext = ({ children }) => {
     
     if(checkProductInCart) {
      
-      toast('item is already in the cart');
+      toast(`That item is already in the cart`);
      
     } else {
       product.quantity = quantity;
