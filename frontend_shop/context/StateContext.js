@@ -39,7 +39,7 @@ export const StateContext = ({ children }) => {
   }, [totalPrice])
   
   //handles total quantities of items in the cart to display
-  const [totalQuantities, setTotalQuantities] = useState(0);
+  const [totalQuantities, setTotalQuantities] = useState(getInitialTotalQuantities);
   useEffect(() => {
     localStorage.setItem('totalQuantities', JSON.stringify(totalQuantities))
   }, [totalQuantities])
