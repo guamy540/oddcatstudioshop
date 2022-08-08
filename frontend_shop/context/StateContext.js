@@ -15,11 +15,11 @@ function getInitialTotalPrice(){
 }}
 
 //seems to be causing a hydration error, must fix in the future
-/*function getInitialTotalQuantities(){
+function getInitialTotalQuantities(){
   if (typeof window !== 'undefined'){
   const localData = localStorage.getItem('totalQuantities');
   return localData ? JSON.parse(localData) : 0
-}}*/
+}}
 
 const Context = createContext();
 
