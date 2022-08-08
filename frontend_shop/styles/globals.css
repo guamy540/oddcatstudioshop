@@ -528,6 +528,21 @@ padding: 30px 65px;
   display: flex;
   gap: 30px;
 }
+
+@media screen and (max-width:800px){
+  .product-detail-desc{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px black;
+    width: 90vw;
+  }
+}
+
 .buttons .add-to-cart{
   padding: 10px 20px;
   border: 1px solid #df9e5e ;
@@ -726,6 +741,9 @@ margin-top: 160px;
     width: 350px;
     height: 350px;
   }
+
+
+
   .cart-container{
     width: 415px;
   padding: 4px;

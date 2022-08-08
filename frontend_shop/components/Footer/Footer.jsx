@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2022 Odd Cat Studio All rights reserverd</p>
+      <p>2022 Odd Cat Studio All rights reserved</p>
       <p className="icons">
         <motion.a href="https://instagram.com/theosunbee?r=nametag" target="_blank" rel="noreferrer"
         whileHover={{scale:1.2}}>
