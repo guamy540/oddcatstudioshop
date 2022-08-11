@@ -1,5 +1,6 @@
 {
   "name": "frontend_shop",
+  "author" : "Ryan High <contactsitesbyryan@gmail.com> (http://sitesbyryan.com/)",
   "version": "0.1.0",
   "private": true,
   "scripts": {
