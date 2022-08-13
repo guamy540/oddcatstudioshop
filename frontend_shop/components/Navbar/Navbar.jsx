@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <AiOutlineClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
             <ul className="app__navbar-smallscreen_links">
-              <li><a href="/" onClick={() => setToggleMenu(false)}>Home</a></li>
+              <li><a href="" onClick={() => setToggleMenu(false)}>Home</a></li>
               <li><a href="#prints" onClick={() => setToggleMenu(false)}>Prints</a></li>
               <li><a href="#stickers" onClick={() => setToggleMenu(false)}>Stickers</a></li>
               <li><a href="#buttons" onClick={() => setToggleMenu(false)}>Buttons</a></li>
