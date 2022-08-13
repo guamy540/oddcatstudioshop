@@ -41,5 +41,10 @@ export default {
         title: 'Category',
         type: 'string',
       },
+      {
+        name: 'stock',
+        title: 'Stock',
+        type: 'number',
+      }
     ]
   }

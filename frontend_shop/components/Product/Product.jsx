@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import { urlFor } from '../../lib/client';
+import product from '../../../backend_sanity/schemas/product';
 
-const Product = ({ product: { image, name, slug, price } }) => {
+const Product = ({ product: { image, name, slug, price, stock } }) => {
   return (
     <div className='product__container'>
       <Link href={`/product/${slug.current}`}>

@@ -18,6 +18,16 @@ const Navbar = () => {
         </Link>
       </motion.p>
 
+      <ul className="app__navbar-links">
+        {['prints', 'stickers', 'buttons', 'singletons'].map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <div />
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
+      </ul>
+
+
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping size={60}/>
         <span className="cart-item-qty">{totalQuantities}</span>
