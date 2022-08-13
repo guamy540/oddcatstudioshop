@@ -31,6 +31,24 @@ const Navbar = () => {
         ))}
       </ul>
 
+      <div className="app__navbar-smallscreen">
+        <GiHamburgerMenu color="#df9e5e" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <div>
+        {toggleMenu && (
+          <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
+            <AiOutlineClose fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
+            <ul className="app__navbar-smallscreen_links">
+              <li><a href="/" onClick={() => setToggleMenu(false)}>Home</a></li>
+              <li><a href="#prints" onClick={() => setToggleMenu(false)}>Prints</a></li>
+              <li><a href="#stickers" onClick={() => setToggleMenu(false)}>Stickers</a></li>
+              <li><a href="#buttons" onClick={() => setToggleMenu(false)}>Buttons</a></li>
+              <li><a href="#singletons" onClick={() => setToggleMenu(false)}>Singletons</a></li>
+            </ul>
+            </div>
+        )}
+      </div>
+      </div>
+
 
       <button type="button" className="cart-icon" onClick={() => setShowCart(true)}>
         <AiOutlineShopping size={60} color='#df9e5e'/>

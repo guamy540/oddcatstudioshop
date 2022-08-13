@@ -31,15 +31,21 @@ width: 100%;
 
 .header-container{
   margin-top: 8rem;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+
 .header-h1{
+  text-align: center;
   font-family: cursive;
+}
+
+.shop-now-message-container h2{
+  text-align: center;
 }
 
 .shop-now-message-container{

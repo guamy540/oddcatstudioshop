@@ -10,8 +10,10 @@ const Header = () => {
         <motion.div
         initial={{x:-1000}}
         animate={{x: 0}}
-        transition={{duration:.5}}>
-            <h1 className='header-h1'>ODD CAT STUDIO SHOP</h1>
+        transition={{duration:.5}}
+        className='header-h1-container'
+        >
+            <h1 className='header-h1' >ODD CAT STUDIO SHOP</h1>
         </motion.div>
         <motion.div className='header-image-container'
            initial={{y:-1000}}
