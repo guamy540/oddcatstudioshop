@@ -917,3 +917,74 @@ margin-top: 160px;
   margin-bottom: -3rem;
   margin-top: -3rem;
 }
+
+.navbar-links-text{
+  transition: .4s;
+}
+
+.navbar-links-text:hover{
+  scale:1.5;
+  transition: all 0.4s ease-in-out;
+}
+
+.app__navbar-smallscreen {
+  display: none;
+  padding-top: 2rem;
+  margin-left: -3;
+  color: white;
+}
+
+.app__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  transition: .5s ease;
+
+  flex-direction: column;
+  z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  color: white;
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.app__navbar-smallscreen_links {
+  list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: #df9e5e;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.app__navbar-smallscreen_links li:hover {
+  color: white;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__navbar-logo img {
+      width: 210px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__navbar-links {
+      display: none;
+  }
+
+  .app__navbar-smallscreen {
+      display: flex;
+  }
+}
