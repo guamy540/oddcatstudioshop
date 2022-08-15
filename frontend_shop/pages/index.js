@@ -11,6 +11,7 @@ const Home = ({products}) => {
 
   return (
     <div> 
+
       <Header/>
 
         <div className='prints_container' id='prints'>

@@ -9,6 +9,7 @@ const Layout = ({children}) => {
     <div className='layout'>
         <Head>
         <title>Odd Cat Studio Store</title>
+        <meta name='description' content="Odd Cat Studio Shop: Prints, Stickers, Buttons and More"/>
         </Head>
     
         <header>
