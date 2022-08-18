@@ -31,17 +31,53 @@ width: 100%;
 
 .header-container{
   margin-top: 8rem;
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 
+.header-cta-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+  row-gap: 3rem;
+  text-align: center;
+}
+
+.header-img-container{
+  cursor: pointer;
+}
+
+.header-img{
+  border-radius: 1rem;
+}
+
+.header-title-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header-h1{
   text-align: center;
+  margin-bottom: 1rem;
   font-family: cursive;
+  font-size: 3rem;
+}
+
+.header-cta-button{
+  cursor: pointer;
+  background-color: #df9e5e;
+  color: white;
+  font-size: 1.4rem;
+  border-color: #df9e5e;
+  border-radius: 2rem;
+  padding: 1.3rem 2rem;
+  margin-bottom: 3rem;
 }
 
 .shop-now-message-container h2{
@@ -58,7 +94,6 @@ width: 100%;
     padding: 1rem;
     margin-bottom: 7rem;
     border-radius: 1rem;
-    box-shadow: 2px 2px 2px black;
   }
 }
 
