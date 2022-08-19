@@ -19,7 +19,11 @@ const Header = () => {
             className='header-cta-button'>
               Shop Now!</motion.button></a>
         </motion.div>
-        <div className='header-cta-container'>
+        <motion.div 
+        initial={{x:-1000}}
+        animate={{x: 0}}
+        transition={{duration:.5}}
+        className='header-cta-container'>
           <a href={`#prints`}>
           <motion.div whileHover={{scale: 1.3, }} className='header-img-container'>
             <Image src={prints} 
@@ -56,7 +60,7 @@ const Header = () => {
             height={250}
             width={250}></Image>
             <p>One of a kinds!</p></motion.div></a>      
-        </div>
+        </motion.div>
 
        {/* <motion.div className='header-image-container'
            initial={{y:-1000}}
