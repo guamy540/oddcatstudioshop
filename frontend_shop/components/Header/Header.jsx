@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className='header-container'>
         <motion.div
-        initial={{x:-1000}}
+        initial={{x:-3000}}
         animate={{x: 0}}
         transition={{duration:.5}}
         className='header-title-container'
